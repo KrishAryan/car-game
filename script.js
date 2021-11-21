@@ -11,7 +11,7 @@ function playGame(){
     if(player.start){
         window.requestAnimationFrame(playGame)
     }
-    window.requestAnimationFrame(playGame)
+    
 }
 function pressOn(e){
     e.preventDefault();
@@ -31,6 +31,8 @@ function start(){
     player.start=true
     window.requestAnimationFrame(playGame)
     let car =document.createElement("div");
-    car.innerText='Car'
+    car.innerText='Car';
+    car.setAttribute("class","car")
     gameArea.appendChild(car);
 }
+ 
